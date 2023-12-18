@@ -4,7 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import { navigate, navigationRef } from './NavigationService';
 import { Routes } from './Routes';
-import { LoginScreen, HomePage, SignUpScreen, SplashScreen } from '../screens';
+import { LoginScreen, HomeScreen, SignUpScreen, SplashScreen } from '../screens';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const AppStack = createNativeStackNavigator();
@@ -37,7 +37,7 @@ export const RootNavigation = () => {
                 <AppStack.Screen name={Routes.SPLASH} component={SplashScreen} />
                 <AppStack.Screen name={Routes.LOGIN} component={LoginScreen} />
                 <AppStack.Screen name={Routes.SIGN_UP} component={SignUpScreen} />
-                <AppStack.Screen name={Routes.HOME} component={HomePage} />
+                <AppStack.Screen name={Routes.HOME} component={HomeScreen} />
             </AppStack.Navigator>
         </NavigationContainer>
     )

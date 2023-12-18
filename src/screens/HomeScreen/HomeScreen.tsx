@@ -14,7 +14,7 @@ import {
 import { ActivityIndicator, Button } from '../../components';
 import { useData } from './useData';
 
-export const HomePage = () => {
+export const HomeScreen = () => {
 
   const background = require('../../assets/images/background.png')
   const letter_r = require('../../assets/images/letter_r.png')
